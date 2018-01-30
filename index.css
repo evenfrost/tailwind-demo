@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+@tailwind preflight;
+
+body {
+  font-family: 'Lato', sans-serif
+}
+
+.btn {
+  @apply .py-3 .px-6 .uppercase .font-semibold .rounded-sm;
+}
+
+.btn-primary {
+  @apply .bg-blue .text-white;
+}
+
+.btn-primary:hover {
+  @apply .bg-blue-dark;
+}
+
+.btn-success {
+  @apply .bg-green .text-white;
+}
+
+.btn-success:hover {
+  @apply .bg-green-dark;
+}
+
+.btn-group {
+  @apply .inline-flex;
+}
+
+.btn-group > .btn {
+  @apply .mx-1;
+}
+
+@tailwind utilities;
+
+.transition {
+  transition: all .3s ease;
+}
+
+.transition-slow {
+  transition: all .6s ease;
+}
+
+.transition-fast {
+  transition: all .1s ease;
+}
